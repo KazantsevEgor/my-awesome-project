@@ -6,7 +6,7 @@
   inset: 0;
   display: grid;
   place-items: center;
-  zindex: 1000;
+  z-index: 1000;
 }
 .modal__backdrop {
   position: absolute;
@@ -17,7 +17,7 @@
   position: relative;
   z-index: 1;
   background: #fff;
-  borderradius: 12px;
+  border-radius: 12px;
   padding: 1.25rem;
   width: min(92vw, 520px);
 }
