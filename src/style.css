@@ -56,7 +56,6 @@ video {
 }
 
 /* Форм-контролы наследуют шрифт и цвет */
-button,
 input,
 select,
 textarea {
@@ -79,8 +78,6 @@ textarea {
   margin: 0 0 var(--space-3);
 }
 
-/* 1.4. Состояния и доступность */
-/* LVHA-порядок для ссылок */
 a:link {
   color: var(--color-primary);
 }
@@ -97,6 +94,9 @@ a:active {
   color: var(--color-danger);
 }
 
+#openDialog {
+  background-color: var(--color-primary);
+}
 /* Фокус-контуры */
 :where(a, button, input, select, textarea):focus-visible {
   outline: 2px solid var(--color-primary);
@@ -183,6 +183,7 @@ html {
 .form__select:focus {
   border-color: var(--color-primary);
   outline: none;
+  }
 }
 
 .form__error {
@@ -215,4 +216,13 @@ button,
   color: #fff;
   border: none;
   cursor: pointer;
+}
+
+.media-container {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .media-container {
+    flex-direction: column;
+  }
 }
